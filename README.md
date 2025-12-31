@@ -1,14 +1,37 @@
-# ETATSCOMPTA FOR [DOLIBARR ERP CRM](https://www.dolibarr.org)
+# EtatsCompta for [Dolibarr ERP CRM](https://www.dolibarr.org)
 
 ## Features
 
-Description...
+Cette ensemble de page à pour but d'ajouter certaines fonctionalités non encore intégré dans Dolibarr
+
+- Génération balance et grand livre > fonctionalité déjà présente dans Dolibarr
+- Génération de Compte de résultat et Bilan au format 2 colonnes avec configuration
+des comptes de tiers pour le bilan
+- Génération des écritures de cloture et d'A-nouveaux, reprennant les comptes
+auxiliaire si ils existent ,
+- Génération de rapport par compte en version détaillé (liste de compte auxiliaire,
+balance par compte auxiliaire et grand livre par compte auxiliaire).
+- Vérification de la clotûre sur une période (permet de détécter des écritures ajouté
+par erreur sur des exercices déjà cloturer)
+
+## Install
+
+Install like any other modules.
+
+1. Clone the repo inside Dolibarr's `htdocs/custom` folder (e.g. `htdocs/custom/etatscompta/` )
+2. Copy `include/conf.inc.php.default` into a new `include/conf.inc.php` and enter the correct values
+
+## Credits
+
+Original code was published by Benoit Commenchail on a [GitLab repo](https://gitlab.com/BenoitCier/consultation-dolibarr-comptabilite) and in the french Dolibarr forums ([post](https://www.dolibarr.fr/forum/t/consultation-comptabilite-bilan-compte-de-resultat-ecriture-de-cloture-et-a-nouveaux/31762))
+
+On that same post, Mathieu Brulaire suggested a module implementation of the files. Sources of this are available as an archive in [this GitHub repo](https://github.com/MathieuB19/etatscompta).
+
+This repository (`cchanche/dolibarr-etatscompta`) is my attempt at cleaning up the contents of this archive to ease-up the process of maintaining a private instance of Dolibarr ERP which relies on this module/
 
 <!--
 ![Screenshot etatscompta](img/screenshot_etatscompta.png?raw=true "EtatsCompta"){imgmd}
 -->
-
-Other modules are available on [Dolistore.com](https://www.dolistore.com).
 
 ## Translations
 
@@ -75,12 +98,3 @@ From your browser:
 
 -->
 
-## Licenses
-
-### Main code
-
-GPLv3 or (at your option) any later version. See file COPYING for more information.
-
-### Documentation
-
-All texts and readmes are licensed under GFDL.
