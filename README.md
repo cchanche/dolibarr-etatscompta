@@ -2,7 +2,10 @@
 
 ## Features
 
-Cette ensemble de page à pour but d'ajouter certaines fonctionalités non encore intégré dans Dolibarr
+> [!note]
+> Original docs by Benoit Commenchail, see [credits](#credits)
+
+Cet ensemble de page à pour but d'ajouter certaines fonctionalités non encore intégrées dans Dolibarr
 
 - Génération balance et grand livre > fonctionalité déjà présente dans Dolibarr
 - Génération de Compte de résultat et Bilan au format 2 colonnes avec configuration
